@@ -18,7 +18,6 @@
  * @param {boolean} options.closeable - Whether the alert can be closed by the user. Default is true.
  * @param {boolean} options.autoClose - Whether the alert will close automatically after the duration. Default is true.
  * @param {string} options.width - The width of the alert. Default is '400px'.
- *
  */
 
 export class AvalynxAlert {
@@ -36,10 +35,10 @@ export class AvalynxAlert {
 		if (!['top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'].includes(this.position)) {
 			this.position = 'top-center';
 		}
-		if (this.autoClose!==false && this.autoClose!==true) {
+		if (this.autoClose !== false && this.autoClose !== true) {
 			this.autoClose = true;
 		}
-		if ((this.closeable!==false && this.closeable!==true) || (this.autoClose===true)) {
+		if ((this.closeable !== false && this.closeable !== true) || (this.autoClose === true)) {
 			this.closeable = true;
 		}
 
@@ -101,14 +100,13 @@ export class AvalynxAlert {
 		alert.classList.add('overflow-hidden');
 		alert.classList.add('avalynx-alert');
 		alert.role = 'alert';
-		alert.innerHTML = '<div class="alert-content">' + this.message;
-		console.log(this.closeable);
+		alert.innerHTML = `<div class="alert-content">${this.message}`;
 		if (this.closeable) {
-			alert.innerHTML += '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+			alert.innerHTML += `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
 		}
-		alert.innerHTML += '</div>';
+		alert.innerHTML += `</div>`;
 		if (this.autoClose) {
-			alert.innerHTML += '<div class="alert-timer" style="height: 5px; width: 0;"></div>';
+			alert.innerHTML += `<div class="alert-timer" style="height: 5px; width: 0;"></div>`;
 		}
 
 		document.getElementById('avalynx-alert-container-' + this.position).appendChild(alert);
