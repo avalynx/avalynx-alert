@@ -1,0 +1,47 @@
+/**
+
+ */
+
+.avalynx-alert .alert-content {
+    padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+}
+
+.avalynx-alert.alert-dismissible .alert-content {
+    padding-right: 3rem;
+}
+
+.avalynx-alert .btn-close {
+    --bs-btn-close-focus-shadow: 0;
+}
+
+.avalynx-alert.alert-primary .alert-timer {
+    background-color: var(--bs-primary-border-subtle);
+}
+
+.avalynx-alert.alert-secondary .alert-timer {
+    background-color: var(--bs-secondary-border-subtle);
+}
+
+.avalynx-alert.alert-success .alert-timer {
+    background-color: var(--bs-success-border-subtle);
+}
+
+.avalynx-alert.alert-danger .alert-timer {
+    background-color: var(--bs-danger-border-subtle);
+}
+
+.avalynx-alert.alert-warning .alert-timer {
+    background-color: var(--bs-warning-border-subtle);
+}
+
+.avalynx-alert.alert-info .alert-timer {
+    background-color: var(--bs-info-border-subtle);
+}
+
+.avalynx-alert.alert-light .alert-timer {
+    background-color: var(--bs-light-border-subtle);
+}
+
+.avalynx-alert.alert-dark .alert-timer {
+    background-color: var(--bs-dark-border-subtle);
+}

@@ -1,0 +1,36 @@
+{
+  "name": "avalynx-alert",
+  "title": "AvalynxAlert",
+  "description": "AvalynxAlert is a simple, lightweight, and customizable alert component for Bootstrap.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "dist/css/avalynx-alert.css",
+    "dist/js/avalynx-alert.js"
+  ],
+  "keywords": [
+    "alert",
+    "bootstrap",
+    "component",
+    "notification",
+    "popup"
+  ],
+  "dependencies": {
+    "bootstrap": ">=5.3"
+  },
+  "ignore": [
+    "package.json"
+  ],
+  "author": {
+    "name": "The Avalynx-Alert Authors",
+    "url": "https://github.com/avalynx/avalynx-alert/graphs/contributors"
+  },
+  "homepage": "https://github.com/avalynx/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalynx/avalynx-alert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avalynx/avalynx-alert/issues"
+  }
+}
