@@ -20,7 +20,7 @@
  * @param {string} options.width - The width of the alert. Default is '400px'.
  */
 
-class AvalynxAlert {
+export class AvalynxAlert {
 	constructor(message, type, options = {}) {
 		this.message = message;
 		this.type = type;
