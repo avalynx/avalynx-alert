@@ -48,6 +48,8 @@ AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You ca
 <script src="https://cdn.jsdelivr.net/npm/avalynx-alert/dist/avalynx-alert.js"></script>
 ```
 
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
+
 ## Installation via NPM
 
 AvalynxAlert is also available as a npm package. You can add it to your project with the following command:
@@ -63,7 +65,7 @@ import { AvalynxAlert } from 'avalynx-alert';
 import 'avalynx-alert/dist/css/avalynx-alert.min.css';
 ```
 
-Make sure to also include Bootstrap's CSS in your project to ensure AvalynxAlert displays correctly.
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
 ## Installation via Symfony AssetMapper
 
@@ -78,7 +80,7 @@ import { AvalynxAlert } from 'avalynx-alert';
 import 'avalynx-alert/dist/css/avalynx-alert.min.css';
 ```
 
-Make sure to also include Bootstrap's CSS in your project to ensure AvalynxAlert displays correctly.
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
 ## Usage
 
