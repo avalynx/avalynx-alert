@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications.
  *
- * @version 0.0.1
+ * @version 0.0.3
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/

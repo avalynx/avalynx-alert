@@ -2,10 +2,11 @@
   "name": "avalynx-alert",
   "title": "AvalynxAlert",
   "description": "AvalynxAlert is a simple, lightweight, and customizable alert component for Bootstrap.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/js/avalynx-alert.js",
   "module": "dist/js/avalynx-alert.js",
+  "style": "dist/css/avalynx-alert.css",
   "files": [
     "dist/css/avalynx-alert.css",
     "dist/js/avalynx-alert.js"
