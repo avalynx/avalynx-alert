@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 0.0.4
+ * @version 0.0.5
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
@@ -29,6 +29,8 @@ export class AvalynxAlert {
 		this.closeable = options.closeable || true;
 		this.autoClose = options.autoClose || true;
 		this.width = options.width || '400px';
+		this.onClose = options.onClose || null;
+
 		if (!['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'].includes(this.type)) {
 			this.type = 'info';
 		}
@@ -123,7 +125,12 @@ export class AvalynxAlert {
 
 			setTimeout(() => {
 				alert.classList.remove('show');
-				setTimeout(() => alert.remove(), 150);
+				setTimeout(() => {
+					alert.remove();
+					if (typeof this.onClose === 'function') {
+						this.onClose();
+					}
+				}, 150);
 			}, this.duration);
 		}
 	}

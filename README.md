@@ -17,6 +17,7 @@ Here's a simple example of how to use AvalynxAlert in your project:
 
 * [Overview](https://avalynx-alert.jbs-newmedia.de/examples/index.html)
 * [Random Alerts](https://avalynx-alert.jbs-newmedia.de/examples/random-alerts.html)
+* [Callback on close](https://avalynx-alert.jbs-newmedia.de/examples/callback-onclose.html)
 
 ## Installation
 
@@ -108,6 +109,7 @@ AvalynxAlert allows the following options for customization:
     - `closeable`: Whether the alert can be closed by the user (default: true).
     - `autoClose`: Whether the alert will close automatically after the duration (default: true).
     - `width`: The width of the alert (default: `400px`).
+    - `onClose`: A callback function to be called when the alert is closed.
 
 ## Contributing
 
