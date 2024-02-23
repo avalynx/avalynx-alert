@@ -16,8 +16,9 @@ AvalynxAlert is a lightweight, dependency-free alert system designed for web app
 Here's a simple example of how to use AvalynxAlert in your project:
 
 * [Overview](https://avalynx-alert.jbs-newmedia.de/examples/index.html)
-* [Random Alerts](https://avalynx-alert.jbs-newmedia.de/examples/random-alerts.html)
+* [Random alerts](https://avalynx-alert.jbs-newmedia.de/examples/random-alerts.html)
 * [Callback on close](https://avalynx-alert.jbs-newmedia.de/examples/callback-onclose.html)
+* [Random alerts every 3 seconds](https://avalynx-alert.jbs-newmedia.de/examples/random-alerts-every-3s.html)
 
 ## Installation
 
