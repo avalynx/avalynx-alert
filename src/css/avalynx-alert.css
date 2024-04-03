@@ -1,0 +1,56 @@
+/**
+ * AvalynxAlert
+ *
+ * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
+ *
+ * @version 0.0.5
+ * @license MIT
+ * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
+ * @website https://github.com/avalynx/
+ * @repository https://github.com/avalynx/avalynx-alert.git
+ * @bugs https://github.com/avalynx/avalynx-alert/issues
+ */
+
+.avalynx-alert .alert-content {
+    padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+}
+
+.avalynx-alert.alert-dismissible .alert-content {
+    padding-right: 3rem;
+}
+
+.avalynx-alert .btn-close {
+    --bs-btn-close-focus-shadow: 0;
+}
+
+.avalynx-alert.alert-primary .alert-timer {
+    background-color: var(--bs-primary-border-subtle);
+}
+
+.avalynx-alert.alert-secondary .alert-timer {
+    background-color: var(--bs-secondary-border-subtle);
+}
+
+.avalynx-alert.alert-success .alert-timer {
+    background-color: var(--bs-success-border-subtle);
+}
+
+.avalynx-alert.alert-danger .alert-timer {
+    background-color: var(--bs-danger-border-subtle);
+}
+
+.avalynx-alert.alert-warning .alert-timer {
+    background-color: var(--bs-warning-border-subtle);
+}
+
+.avalynx-alert.alert-info .alert-timer {
+    background-color: var(--bs-info-border-subtle);
+}
+
+.avalynx-alert.alert-light .alert-timer {
+    background-color: var(--bs-light-border-subtle);
+}
+
+.avalynx-alert.alert-dark .alert-timer {
+    background-color: var(--bs-dark-border-subtle);
+}
