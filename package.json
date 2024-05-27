@@ -21,9 +21,6 @@
     "notification",
     "popup"
   ],
-  "dependencies": {
-    "bootstrap": ">=5.3"
-  },
   "ignore": [
     "package.json"
   ],
@@ -38,5 +35,18 @@
   },
   "bugs": {
     "url": "https://github.com/avalynx/avalynx-alert/issues"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "bootstrap": ">=5.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7",
+    "@babel/preset-env": "^7",
+    "babel-jest": "^29",
+    "jest": "^29",
+    "jest-environment-jsdom": "^29"
   }
 }

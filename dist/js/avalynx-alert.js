@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 0.0.5
+ * @version 0.0.6
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
@@ -25,61 +25,63 @@ class AvalynxAlert {
     constructor(message, type, options = {}) {
         this.message = message;
         this.type = type;
-        this.duration = options.duration || 5000;
-        this.position = options.position || 'top-center';
-        this.closeable = options.closeable || true;
-        this.autoClose = options.autoClose || true;
-        this.width = options.width || '400px';
-        this.onClose = options.onClose || null;
-
+        this.options = {
+            duration: options.duration || 5000,
+            position: options.position || 'top-center',
+            closeable: options.closeable || true,
+            autoClose: options.autoClose || true,
+            width: options.width || '400px',
+            onClose: options.onClose || null,
+            ...options
+        };
         if (!['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'].includes(this.type)) {
             this.type = 'info';
         }
-        if (!['top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'].includes(this.position)) {
-            this.position = 'top-center';
+        if (!['top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'].includes(this.options.position)) {
+            this.options.position = 'top-center';
         }
-        if (this.autoClose !== false && this.autoClose !== true) {
-            this.autoClose = true;
+        if (this.options.autoClose !== false && this.options.autoClose !== true) {
+            this.options.autoClose = true;
         }
-        if ((this.closeable !== false && this.closeable !== true) || (this.autoClose === true)) {
-            this.closeable = true;
+        if ((this.options.closeable !== false && this.options.closeable !== true) || (this.options.autoClose === true)) {
+            this.options.closeable = true;
         }
 
         this.init();
     }
 
     ensureAlertContainer() {
-        if (!document.getElementById('avalynx-alert-container-' + this.position)) {
+        if (!document.getElementById('avalynx-alert-container-' + this.options.position)) {
             var container = document.createElement('div');
-            container.id = 'avalynx-alert-container-' + this.position;
+            container.id = 'avalynx-alert-container-' + this.options.position;
             container.style.width = '100%';
-            container.style.maxWidth = this.width;
+            container.style.maxWidth = this.options.width;
             container.style.zIndex = '1000';
             container.classList.add('container-fluid');
 
-            if (this.position === 'top-left') {
+            if (this.options.position === 'top-left') {
                 container.style.position = 'fixed';
                 container.style.top = '10px';
                 container.style.left = '0px';
-            } else if (this.position === 'top-center') {
+            } else if (this.options.position === 'top-center') {
                 container.style.position = 'fixed';
                 container.style.top = '10px';
                 container.style.left = '50%';
                 container.style.transform = 'translateX(-50%)';
-            } else if (this.position === 'top-right') {
+            } else if (this.options.position === 'top-right') {
                 container.style.position = 'fixed';
                 container.style.top = '10px';
                 container.style.right = '0px';
-            } else if (this.position === 'bottom-left') {
+            } else if (this.options.position === 'bottom-left') {
                 container.style.position = 'fixed';
                 container.style.bottom = '10px';
                 container.style.left = '0px';
-            } else if (this.position === 'bottom-center') {
+            } else if (this.options.position === 'bottom-center') {
                 container.style.position = 'fixed';
                 container.style.bottom = '10px';
                 container.style.left = '50%';
                 container.style.transform = 'translateX(-50%)';
-            } else if (this.position === 'bottom-right') {
+            } else if (this.options.position === 'bottom-right') {
                 container.style.position = 'fixed';
                 container.style.bottom = '10px';
                 container.style.right = '0px';
@@ -94,7 +96,7 @@ class AvalynxAlert {
 
         var alert = document.createElement('div');
         alert.className = `alert alert-${this.type}`;
-        if (this.closeable) {
+        if (this.options.closeable) {
             alert.classList.add('alert-dismissible');
         }
         alert.classList.add('fade');
@@ -104,19 +106,19 @@ class AvalynxAlert {
         alert.classList.add('avalynx-alert');
         alert.role = 'alert';
         alert.innerHTML = `<div class="alert-content">${this.message}`;
-        if (this.closeable) {
+        if (this.options.closeable) {
             alert.innerHTML += `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
         }
         alert.innerHTML += `</div>`;
-        if (this.autoClose) {
+        if (this.options.autoClose) {
             alert.innerHTML += `<div class="alert-timer" style="height: 5px; width: 0;"></div>`;
         }
 
-        document.getElementById('avalynx-alert-container-' + this.position).appendChild(alert);
+        document.getElementById('avalynx-alert-container-' + this.options.position).appendChild(alert);
 
-        if (this.autoClose) {
+        if (this.options.autoClose) {
             var timerBar = alert.querySelector('.alert-timer');
-            timerBar.style.transition = `width ${this.duration}ms linear`;
+            timerBar.style.transition = `width ${this.options.duration}ms linear`;
 
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
@@ -128,11 +130,11 @@ class AvalynxAlert {
                 alert.classList.remove('show');
                 setTimeout(() => {
                     alert.remove();
-                    if (typeof this.onClose === 'function') {
-                        this.onClose();
+                    if (typeof this.options.onClose === 'function') {
+                        this.options.onClose();
                     }
                 }, 150);
-            }, this.duration);
+            }, this.options.duration);
         }
     }
 }
