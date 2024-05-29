@@ -1,7 +1,11 @@
 # AvalynxAlert Changelog
 
+## 0.0.7
+- [x] Readme updated
+- [x] `composer.json` added
+
 ## 0.0.6
- - Code optimization
+ - [x] Code optimization
 
 ## 0.0.5
  - [x] `option.onClose` added as a callback function to be called when the alert is closed
