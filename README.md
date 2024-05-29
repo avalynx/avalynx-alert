@@ -84,6 +84,23 @@ import 'avalynx-alert/dist/css/avalynx-alert.min.css';
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
+## Installation via Composer
+
+AvalynxAlert is also available as a Composer package. You can add it to your project with the following command:
+
+```bash
+composer require avalynx/alert
+```
+
+After installing, you can import AvalynxAlert into your HTML file like this:
+
+```html
+<link href="vendor/avalynx/avalynx-alert/dist/css/avalynx-alert.css" rel="stylesheet">
+<script src="vendor/avalynx/avalynx-alert/dist/js/avalynx-alert.js"></script>
+``` 
+
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
+
 ## Usage
 
 To create an alert, simply instantiate a new `AvalynxAlert` object with the desired options:
