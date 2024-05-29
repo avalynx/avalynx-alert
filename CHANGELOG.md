@@ -1,5 +1,8 @@
 # AvalynxAlert Changelog
 
+## 0.0.8
+- [x] Composer fixed
+
 ## 0.0.7
 - [x] Readme updated
 - [x] `composer.json` added

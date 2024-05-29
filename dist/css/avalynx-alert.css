@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 0.0.7
+ * @version 0.0.8
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
