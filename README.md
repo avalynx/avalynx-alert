@@ -41,7 +41,7 @@ Then, include AvalynxAlert:
 
 Replace `path/to/avalynx-alert.js` and `path/to/avalynx-alert.css` with the actual path to the files in your project.
 
-## Installation via jsDelivr
+## Installation via jsDelivr ([Link](https://cdn.jsdelivr.net/npm/avalynx-alert/))
 
 AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
@@ -52,7 +52,7 @@ AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You ca
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
-## Installation via NPM
+## Installation via NPM ([Link](https://www.npmjs.com/package/avalynx-alert))
 
 AvalynxAlert is also available as a npm package. You can add it to your project with the following command:
 
@@ -84,7 +84,7 @@ import 'avalynx-alert/dist/css/avalynx-alert.min.css';
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
-## Installation via Composer
+## Installation via Composer ([Link](https://packagist.org/packages/avalynx/avalynx-alert))
 
 AvalynxAlert is also available as a Composer package. You can add it to your project with the following command:
 
