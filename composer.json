@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "components/bootstrap": "^5.3"
+        "twbs/bootstrap": "^5.3"
     },
     "repositories": [
         {
