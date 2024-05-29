@@ -10,14 +10,16 @@
  * @repository https://github.com/avalynx/avalynx-alert.git
  * @bugs https://github.com/avalynx/avalynx-alert/issues
  *
- * @param {string} message - The message to display in the alert.
- * @param {string} type - The type of alert. One of 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'.
- * @param {object} options - The options for the alert.
- * @param {number} options.duration - The duration in milliseconds for the alert to be displayed. Default is 5000.
- * @param {string} options.position - The position of the alert. One of 'top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right'. Default is 'top-center'.
- * @param {boolean} options.closeable - Whether the alert can be closed by the user. Default is true.
- * @param {boolean} options.autoClose - Whether the alert will close automatically after the duration. Default is true.
- * @param {string} options.width - The width of the alert. Default is '400px'.
+ * @param {string} message - The message to display in the alert (default: '').
+ * @param {string} type - The type of alert. One of 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark' (default: 'info').
+ * @param {object} options - An object containing the following keys:
+ * @param {number} options.duration - Duration in milliseconds for the alert to be displayed (default: 5000).
+ * @param {string} options.position - Position of the alert on the screen. One of 'top-left', 'top-center', 'top-right', 'bottom-left', 'bottom-center', 'bottom-right' (default: 'top-center').
+ * @param {boolean} options.closeable - Whether the alert can be closed by the user (default: true).
+ * @param {boolean} options.autoClose - Whether the alert will close automatically after the duration (default: true).
+ * @param {string} options.width - The width of the alert (default: '400px').
+ * @param {function} options.onClose - A callback function to execute when the alert is closed (default: null).
+ *
  */
 
 export class AvalynxAlert {

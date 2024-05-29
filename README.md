@@ -103,12 +103,12 @@ new AvalynxAlert('Your message here', 'success', {
 AvalynxAlert allows the following options for customization:
 
 - `message`: (string) The message to display in the alert (default: `''`).
-- `type`: (string) The type of alert (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`) default: `info`.
+- `type`: (string) The type of alert. One of (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`) (default: `'info'`).
 - `options`: An object containing the following keys:
-    - `duration`: (int) Duration in milliseconds for the alert to be displayed (default: `5000`).
-    - `position`: (string) Position of the alert on the screen (default: `top-center`).
-    - `closeable`: (bool) Whether the alert can be closed by the user (default: `true`).
-    - `autoClose`: (bool) Whether the alert will close automatically after the duration (default: `true`).
+    - `duration`: (number) Duration in milliseconds for the alert to be displayed (default: `5000`).
+    - `position`: (string) Position of the alert on the screen. One of `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` (default: `'top-right'`).
+    - `closeable`: (boolean) Whether the alert can be closed by the user (default: `true`).
+    - `autoClose`: (boolean) Whether the alert will close automatically after the duration (default: `true`).
     - `width`: (string) The width of the alert (default: `400px`).
     - `onClose`: (function) A callback function to execute when the alert is closed (default: `null`).
 
