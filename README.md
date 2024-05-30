@@ -89,7 +89,7 @@ Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAl
 AvalynxAlert is also available as a Composer package. You can add it to your project with the following command:
 
 ```bash
-composer require avalynx/alert
+composer require avalynx/avalynx-alert
 ```
 
 After installing, you can import AvalynxAlert into your HTML file like this:
