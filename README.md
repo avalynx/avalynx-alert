@@ -84,6 +84,17 @@ import 'avalynx-alert/dist/css/avalynx-alert.min.css';
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
 
+## Installation via Symfony AssetComposer
+
+More information about the Symfony AssetComposer Bundle can be found [here](https://github.com/jbsnewmedia/asset-composer-bundle).
+
+```twig
+{% do addAssetComposer('avalynx/avalynx-alert/dist/css/avalynx-alert.css') %}
+{% do addAssetComposer('avalynx/avalynx-alert/dist/js/avalynx-alert.js') %}
+```
+
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
+
 ## Installation via Composer ([Link](https://packagist.org/packages/avalynx/avalynx-alert))
 
 AvalynxAlert is also available as a Composer package. You can add it to your project with the following command:

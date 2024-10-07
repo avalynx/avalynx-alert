@@ -1,0 +1,13 @@
+{
+  "name": "avalynx/avalynx-alert",
+  "files": [
+    "dist/css/avalynx-alert.css",
+    "dist/js/avalynx-alert.esm.js",
+    "dist/js/avalynx-alert.js"
+  ],
+  "files-dev": [
+    "src/css/avalynx-alert.css",
+    "src/js/avalynx-alert.esm.js",
+    "src/js/avalynx-alert.js"
+  ]
+}
