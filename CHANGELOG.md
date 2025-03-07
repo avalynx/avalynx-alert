@@ -1,5 +1,8 @@
 # AvalynxAlert Changelog
 
+## 0.0.9
+- [x] assetscomposer.json added
+
 ## 0.0.8
 - [x] Composer fixed
 
