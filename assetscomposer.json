@@ -7,7 +7,6 @@
   ],
   "files-dev": [
     "src/css/avalynx-alert.css",
-    "src/js/avalynx-alert.esm.js",
     "src/js/avalynx-alert.js"
   ]
 }
