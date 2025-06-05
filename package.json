@@ -2,7 +2,7 @@
   "name": "avalynx-alert",
   "title": "AvalynxAlert",
   "description": "AvalynxAlert is a simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/js/avalynx-alert.js",
   "module": "dist/js/avalynx-alert.esm.js",
