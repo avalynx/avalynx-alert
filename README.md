@@ -47,8 +47,8 @@ Replace `path/to/avalynx-alert.js` and `path/to/avalynx-alert.css` with the actu
 AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.3/dist/css/avalynx-alert.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.3/dist/js/avalynx-alert.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.4/dist/css/avalynx-alert.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.4/dist/js/avalynx-alert.js"></script>
 ```
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
