@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 1.0.2
+ * @version 1.0.3
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
@@ -24,6 +24,9 @@
 
 class AvalynxAlert {
     constructor(message, type, options = {}) {
+        if (options === null || typeof options !== 'object') {
+            options = {};
+        }
         this.message = message;
         this.type = type;
         this.options = {
@@ -105,7 +108,6 @@ class AvalynxAlert {
         alert.classList.add('p-0');
         alert.classList.add('overflow-hidden');
         alert.classList.add('avalynx-alert');
-        alert.role = 'alert';
         alert.innerHTML = `<div class="alert-content">${this.message}`;
         if (this.options.closeable) {
             alert.innerHTML += `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
@@ -114,6 +116,7 @@ class AvalynxAlert {
         if (this.options.autoClose) {
             alert.innerHTML += `<div class="alert-timer" style="height: 5px; width: 0;"></div>`;
         }
+        alert.setAttribute('role', 'alert');
 
         document.getElementById('avalynx-alert-container-' + this.options.position).appendChild(alert);
 
@@ -138,4 +141,8 @@ class AvalynxAlert {
             }, this.options.duration);
         }
     }
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = AvalynxAlert;
 }

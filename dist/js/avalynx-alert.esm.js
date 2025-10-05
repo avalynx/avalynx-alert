@@ -22,8 +22,13 @@
  *
  */
 
+import * as bootstrap from 'bootstrap';
+
 export class AvalynxAlert {
     constructor(message, type, options = {}) {
+        if (options === null || typeof options !== 'object') {
+            options = {};
+        }
         this.message = message;
         this.type = type;
         this.options = {
@@ -105,7 +110,6 @@ export class AvalynxAlert {
         alert.classList.add('p-0');
         alert.classList.add('overflow-hidden');
         alert.classList.add('avalynx-alert');
-        alert.role = 'alert';
         alert.innerHTML = `<div class="alert-content">${this.message}`;
         if (this.options.closeable) {
             alert.innerHTML += `<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
@@ -114,6 +118,7 @@ export class AvalynxAlert {
         if (this.options.autoClose) {
             alert.innerHTML += `<div class="alert-timer" style="height: 5px; width: 0;"></div>`;
         }
+        alert.setAttribute('role', 'alert');
 
         document.getElementById('avalynx-alert-container-' + this.options.position).appendChild(alert);
 

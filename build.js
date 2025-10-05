@@ -18,7 +18,9 @@ fs.readFile(filePath, 'utf8', (err, data) => {
         return;
     }
 
-    const result = data.replace(/class /g, 'export class ');
+    let result = data.replace(/class AvalynxAlert /g, 'import * as bootstrap from \'bootstrap\';\n\nexport class AvalynxAlert ');
+
+    result = result.replace(/\n\nif \(typeof module !== 'undefined' && module\.exports\) \{\n    module\.exports = AvalynxAlert;\n\}\n?$/, '');
 
     fs.writeFile(filePath, result, 'utf8', err => {
         if (err) {
