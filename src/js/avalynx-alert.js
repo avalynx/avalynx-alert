@@ -24,11 +24,11 @@
 
 class AvalynxAlert {
     constructor(message, type, options = {}) {
+        this.message = message;
+        this.type = type;
         if (options === null || typeof options !== 'object') {
             options = {};
         }
-        this.message = message;
-        this.type = type;
         this.options = {
             duration: options.duration || 5000,
             position: options.position || 'top-center',
