@@ -1,5 +1,12 @@
 # AvalynxAlert
 
+[![npm version](https://img.shields.io/npm/v/avalynx-alert)](https://www.npmjs.com/package/avalynx-alert)
+[![npm downloads](https://img.shields.io/npm/dt/avalynx-alert)](https://www.npmjs.com/package/avalynx-alert)
+[![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/avalynx-alert)](https://www.jsdelivr.com/package/npm/avalynx-alert)
+[![License](https://img.shields.io/npm/l/avalynx-alert)](LICENSE)
+[![Tests](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/avalynx/avalynx-alert/branch/main/graph/badge.svg)](https://codecov.io/gh/avalynx/avalynx-alert)
+
 AvalynxAlert is a lightweight, dependency-free alert system designed for web applications. It leverages Bootstrap (version 5.3 or higher) to provide a seamless integration with your project, offering a range of customizable alerts that can be positioned anywhere on the screen.
 
 ## Features
@@ -47,8 +54,8 @@ Replace `path/to/avalynx-alert.js` and `path/to/avalynx-alert.css` with the actu
 AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.4/dist/css/avalynx-alert.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.4/dist/js/avalynx-alert.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.5/dist/css/avalynx-alert.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.5/dist/js/avalynx-alert.js"></script>
 ```
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
@@ -65,7 +72,7 @@ After installing, you can import AvalynxAlert into your JavaScript file like thi
 
 ```javascript
 import { AvalynxAlert } from 'avalynx-alert';
-import 'avalynx-alert/dist/css/avalynx-alert.min.css';
+import 'avalynx-alert/dist/css/avalynx-alert.css';
 ```
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
@@ -80,7 +87,7 @@ After installing, you can import AvalynxAlert into your JavaScript file like thi
 
 ```javascript
 import { AvalynxAlert } from 'avalynx-alert';
-import 'avalynx-alert/dist/css/avalynx-alert.min.css';
+import 'avalynx-alert/dist/css/avalynx-alert.css';
 ```
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.
@@ -135,7 +142,7 @@ AvalynxAlert allows the following options for customization:
 - `type`: (string) The type of alert. One of (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`) (default: `'info'`).
 - `options`: An object containing the following keys:
     - `duration`: (number) Duration in milliseconds for the alert to be displayed (default: `5000`).
-    - `position`: (string) Position of the alert on the screen. One of `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` (default: `'top-right'`).
+    - `position`: (string) Position of the alert on the screen. One of `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` (default: `'top-center'`).
     - `closeable`: (boolean) Whether the alert can be closed by the user (default: `true`).
     - `autoClose`: (boolean) Whether the alert will close automatically after the duration (default: `true`).
     - `width`: (string) The width of the alert (default: `400px`).

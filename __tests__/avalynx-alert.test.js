@@ -182,6 +182,26 @@ describe('AvalynxAlert', () => {
             expect(container.style.position).toBe('fixed');
             expect(container.style.bottom).toBe('10px');
             expect(container.style.right).toBe('0px');
+            expect(container.style.left).toBe('');
+            expect(container.style.top).toBe('');
+        });
+
+        test('should not have top or bottom set for left/right positions', () => {
+            new AvalynxAlert('Test', 'info', { position: 'top-left' });
+            const containerTopLeft = document.getElementById('avalynx-alert-container-top-left');
+            expect(containerTopLeft.style.bottom).toBe('');
+
+            document.body.innerHTML = '';
+            new AvalynxAlert('Test', 'info', { position: 'top-right' });
+            const containerTopRight = document.getElementById('avalynx-alert-container-top-right');
+            expect(containerTopRight.style.bottom).toBe('');
+            expect(containerTopRight.style.left).toBe('');
+
+            document.body.innerHTML = '';
+            new AvalynxAlert('Test', 'info', { position: 'bottom-left' });
+            const containerBottomLeft = document.getElementById('avalynx-alert-container-bottom-left');
+            expect(containerBottomLeft.style.top).toBe('');
+            expect(containerBottomLeft.style.right).toBe('');
         });
 
         test('should set container width and z-index', () => {
@@ -451,6 +471,30 @@ describe('AvalynxAlert', () => {
         test('should handle null options parameter', () => {
             expect(() => {
                 new AvalynxAlert('Test', 'info', null);
+            }).not.toThrow();
+        });
+
+        test('should handle array as options parameter', () => {
+            expect(() => {
+                new AvalynxAlert('Test', 'info', ['invalid', 'options']);
+            }).not.toThrow();
+        });
+
+        test('should handle number as options parameter', () => {
+            expect(() => {
+                new AvalynxAlert('Test', 'info', 12345);
+            }).not.toThrow();
+        });
+
+        test('should handle string as options parameter', () => {
+            expect(() => {
+                new AvalynxAlert('Test', 'info', 'invalid options');
+            }).not.toThrow();
+        });
+
+        test('should handle false as options parameter', () => {
+            expect(() => {
+                new AvalynxAlert('Test', 'info', false);
             }).not.toThrow();
         });
     });

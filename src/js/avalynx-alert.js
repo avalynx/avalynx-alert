@@ -3,7 +3,7 @@
  *
  * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 1.0.4
+ * @version 1.0.5
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
@@ -63,32 +63,34 @@ class AvalynxAlert {
             container.style.zIndex = '1000';
             container.classList.add('container-fluid');
 
-            if (this.options.position === 'top-left') {
-                container.style.position = 'fixed';
-                container.style.top = '10px';
-                container.style.left = '0px';
-            } else if (this.options.position === 'top-center') {
-                container.style.position = 'fixed';
-                container.style.top = '10px';
-                container.style.left = '50%';
-                container.style.transform = 'translateX(-50%)';
-            } else if (this.options.position === 'top-right') {
-                container.style.position = 'fixed';
-                container.style.top = '10px';
-                container.style.right = '0px';
-            } else if (this.options.position === 'bottom-left') {
-                container.style.position = 'fixed';
-                container.style.bottom = '10px';
-                container.style.left = '0px';
-            } else if (this.options.position === 'bottom-center') {
-                container.style.position = 'fixed';
-                container.style.bottom = '10px';
-                container.style.left = '50%';
-                container.style.transform = 'translateX(-50%)';
-            } else if (this.options.position === 'bottom-right') {
-                container.style.position = 'fixed';
-                container.style.bottom = '10px';
-                container.style.right = '0px';
+            // Positioning
+            container.style.position = 'fixed';
+            switch (this.options.position) {
+                case 'top-left':
+                    container.style.top = '10px';
+                    container.style.left = '0px';
+                    break;
+                case 'top-center':
+                    container.style.top = '10px';
+                    container.style.left = '50%';
+                    container.style.transform = 'translateX(-50%)';
+                    break;
+                case 'top-right':
+                    container.style.top = '10px';
+                    container.style.right = '0px';
+                    break;
+                case 'bottom-left':
+                    container.style.bottom = '10px';
+                    container.style.left = '0px';
+                    break;
+                case 'bottom-center':
+                    container.style.bottom = '10px';
+                    container.style.left = '50%';
+                    container.style.transform = 'translateX(-50%)';
+                    break;
+                default: // 'bottom-right'
+                    container.style.bottom = '10px';
+                    container.style.right = '0px';
             }
 
             document.body.appendChild(container);
@@ -143,6 +145,7 @@ class AvalynxAlert {
     }
 }
 
+/* istanbul ignore next */
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = AvalynxAlert;
 }
