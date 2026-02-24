@@ -6,6 +6,7 @@
 [![Lizenz](https://img.shields.io/npm/l/avalynx-alert)](LICENSE)
 [![Tests](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/gh/avalynx/avalynx-alert/branch/main/graph/badge.svg)](https://codecov.io/gh/avalynx/avalynx-alert)
+[![GitHub stars](https://img.shields.io/github/stars/avalynx/avalynx-alert?style=flat&logo=github)](https://github.com/avalynx/avalynx-alert)
 
 AvalynxAlert ist ein leichtgewichtiges, eigenständiges Benachrichtigungssystem für Web‑Anwendungen. Es nutzt Bootstrap (ab Version 5.3) und bietet anpassbare Alerts, die flexibel auf dem Bildschirm positioniert werden können.
 
