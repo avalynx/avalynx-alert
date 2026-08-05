@@ -1,12 +1,14 @@
 # AvalynxAlert
 
-[![npm version](https://img.shields.io/npm/v/avalynx-alert)](https://www.npmjs.com/package/avalynx-alert)
-[![npm downloads](https://img.shields.io/npm/dt/avalynx-alert)](https://www.npmjs.com/package/avalynx-alert)
-[![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/avalynx-alert)](https://www.jsdelivr.com/package/npm/avalynx-alert)
-[![License](https://img.shields.io/npm/l/avalynx-alert)](LICENSE)
-[![Tests](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml)
-[![codecov](https://codecov.io/gh/avalynx/avalynx-alert/branch/main/graph/badge.svg)](https://codecov.io/gh/avalynx/avalynx-alert)
-[![GitHub stars](https://img.shields.io/github/stars/avalynx/avalynx-alert?style=flat&logo=github)](https://github.com/avalynx/avalynx-alert)
+[![npm version](https://jbs-newmedia.de/badge/npm/avalynx-alert/version.svg)](https://www.npmjs.com/package/avalynx-alert)
+[![npm downloads](https://jbs-newmedia.de/badge/npm/avalynx-alert/download.svg)](https://www.npmjs.com/package/avalynx-alert)
+[![Composer version](https://jbs-newmedia.de/badge/composer/avalynx/avalynx-alert/version.svg)](https://packagist.org/packages/avalynx/avalynx-alert)
+[![Composer downloads](https://jbs-newmedia.de/badge/composer/avalynx/avalynx-alert/download.svg)](https://packagist.org/packages/avalynx/avalynx-alert)
+[![jsDelivr](https://jbs-newmedia.de/badge/jsdelivr/avalynx-alert/hits.svg)](https://www.jsdelivr.com/package/npm/avalynx-alert)
+[![License](https://jbs-newmedia.de/badge/npm/avalynx-alert/license.svg)](LICENSE)
+[![Tests](https://jbs-newmedia.de/badge/github/avalynx/avalynx-alert/tests.svg)](https://github.com/avalynx/avalynx-alert/actions/workflows/tests.yml)
+[![codecov](https://jbs-newmedia.de/badge/codecov/avalynx/avalynx-alert/coverage.svg)](https://codecov.io/gh/avalynx/avalynx-alert)
+[![GitHub stars](https://jbs-newmedia.de/badge/github/avalynx/avalynx-alert/stars.svg)](https://github.com/avalynx/avalynx-alert)
 
 AvalynxAlert is a lightweight, dependency-free alert system designed for web applications. It leverages Bootstrap (version 5.3 or higher) to provide a seamless integration with your project, offering a range of customizable alerts that can be positioned anywhere on the screen.
 
@@ -19,7 +21,7 @@ AvalynxAlert is a lightweight, dependency-free alert system designed for web app
 - **AutoClose Functionality**: Alerts can automatically disappear after a certain period.
 - **Easy to Use**: Simple API for creating and managing alerts within your web applications.
 
-## Example
+## Examples
 
 Here's a simple example of how to use AvalynxAlert in your project:
 
@@ -55,8 +57,8 @@ Replace `path/to/avalynx-alert.js` and `path/to/avalynx-alert.css` with the actu
 AvalynxAlert is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.5/dist/css/avalynx-alert.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.5/dist/js/avalynx-alert.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.6/dist/css/avalynx-alert.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/avalynx-alert@1.0.6/dist/js/avalynx-alert.js"></script>
 ```
 
 Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxAlert displays correctly.

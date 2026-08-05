@@ -1,9 +1,9 @@
 /**
  * AvalynxAlert
  *
- * A simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
+ * AvalynxAlert is a simple alert system for web applications. Based on Bootstrap >=5.3 without any framework dependencies.
  *
- * @version 1.0.5
+ * @version 1.0.6
  * @license MIT
  * @author https://github.com/avalynx/avalynx-alert/graphs/contributors
  * @website https://github.com/avalynx/
@@ -63,7 +63,6 @@ class AvalynxAlert {
             container.style.zIndex = '1000';
             container.classList.add('container-fluid');
 
-            // Positioning
             container.style.position = 'fixed';
             switch (this.options.position) {
                 case 'top-left':
@@ -88,7 +87,7 @@ class AvalynxAlert {
                     container.style.left = '50%';
                     container.style.transform = 'translateX(-50%)';
                     break;
-                default: // 'bottom-right'
+                default:
                     container.style.bottom = '10px';
                     container.style.right = '0px';
             }
